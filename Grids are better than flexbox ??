@@ -1,0 +1,11 @@
+CSS Grid – What's new in Tailwind CSS
+Tailwind CSS v1.2 added a comprehensive set of utilities for working with CSS Grid Layout! Let's take a look at how they work
+https://youtu.be/b-hrxkgkG-s
+
+
+https://youtu.be/_r2qB44o_Fs
+Tailwind CSS Tutorial #12 - Grids
+In this tailwind css tutorial we'll take a look at the css grid classes available to us.
+
+You can create really awesome responsive layouts by using grids and media queries.
+Just remember, start mobile-first, and then add an md: or lg: whenever needed
