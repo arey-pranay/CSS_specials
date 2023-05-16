@@ -1,0 +1,8 @@
+1 em means same as parent
+2 em means double of parent
+If you compound elements with font sizes in em, they'll be multiplied to their parents' size and might result in huge unwanted sizes
+
+By default the size is 16 pixels
+rem works with relation to html, it's root em.. so it doesn't cause compounding
+If you set margins or paddings using ems, then it looks relative to the font size of that element
+The trick is to set other units as rems and then whenever you use a media query, just change the font size of the html, so all of it will adjust according to that
