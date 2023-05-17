@@ -9,3 +9,30 @@ In this tailwind css tutorial we'll take a look at the css grid classes availabl
 
 You can create really awesome responsive layouts by using grids and media queries.
 Just remember, start mobile-first, and then add an md: or lg: whenever needed
+
+--This is how you create a grid with Tailwind CSS
+
+<div class="grid grid-cols-4 gap-4">
+  <div>01</div>
+  <!-- ... -->
+  <div>09</div>
+</div>
+
+!! The interesting complex part !!
+
+If you want to justify the grid cells themselves (they're the contents of the grids), you use:
+justify-normal	
+justify-start	
+justify-end	
+justify-center	
+justify-between	
+justify-around	
+justify-evenly	
+justify-stretch
+
+But if you want to align the things present inside these invisible cells, then you use:
+
+justify-items-start
+justify-items-end	
+justify-items-center	
+justify-items-stretch
