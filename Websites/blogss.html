@@ -5,16 +5,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
     <div id="Navbar" class="p-5 sticky top-0 bg-white">
-      <ul class="grid grid-cols-5">
+      <ul class="hidden md:grid grid-cols-5">
         <li><a href="#Blog">Blog</a></li>
         <li><a href="#Images">Images</a></li>
         <li><a href="#Features">Features</a></li>
         <li><a href="#Gallery">Gallery</a></li>
         <li><a href="#Nested">Nested</a></li>
+      </ul>
+      <div></div>
+      <ul class="md:hidden grid grid-cols-2 place-items-end">
+        <li class="mb-2">Responsive</li>
+        <li>
+          <button
+            id="dropdownMenuIconButton"
+            data-dropdown-toggle="dropdownDots"
+            class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            type="button"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+
+          <!-- Dropdown menu -->
+          <div
+            id="dropdownDots"
+            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+          >
+            <ul
+              class="py-2 text-sm text-gray-700 dark:text-gray-200"
+              aria-labelledby="dropdownMenuIconButton"
+            >
+              <li>
+                <a
+                  href="#Blog"
+                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#Images"
+                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Images</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#Features"
+                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Features</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#Gallery"
+                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Gallery</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#Nested"
+                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Nested</a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
       </ul>
     </div>
 
@@ -46,7 +124,7 @@
     </div>
 
     <div id="Images" class="border border-emerald-300 pt-20 bg-slate-500">
-      <div class="h-screen">
+      <div class="min-h-screen pb-5">
         <div
           class="grid grid-cols-2 grid-rows-3 md:grid-rows-4 md:grid-cols-4 gap-2 md:gap-4 h-screen"
         >
@@ -105,7 +183,7 @@
           </div>
           <div class="pt-2 pb-8">
             <h2 class="font-semibold text-xl pt-4 text-gray-800">Feature 4</h2>
-            <p class="text-gray-500 pt-2">
+            <p class="text-gray-500 pt-2 text-clip">
               This is some sample text for the purposes of this grid demo
               example. Try viewing on a mobile device and there will be two
               columns instead of four.
@@ -148,7 +226,7 @@
       id="Nested"
       class="border border-emerald-300 pt-20 bg-slate-500 bottom-0"
     >
-      <div class="h-screen">
+      <div class="min-h-screen">
         <div class="lg:grid lg:grid-cols-2 lg:gap-8">
           <div class="w-4/5">
             <h1 class="text-4xl font-bold">
@@ -182,5 +260,6 @@
         </div>
       </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
   </body>
 </html>
