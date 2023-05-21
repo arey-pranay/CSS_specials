@@ -36,3 +36,22 @@ justify-items-start
 justify-items-end	
 justify-items-center	
 justify-items-stretch
+
+Some more info about these properties
+https://www.youtube.com/watch?v=kuY9MehvHh4
+
+grids are by default
+justify-items-stretch for x
+items-stretch for y 
+Items are stretched in the rows and columns
+This applies to Items in each grid cell
+
+To space the cells themselves
+justify-start justify-end
+For y, it's content-start, content-between
+
+in -start and -end.. the container takes as little space as needed and moves to start or end
+
+https://www.youtube.com/watch?v=9aQ6nFMsbDs
+
+and yeah flex justify-end items center is a good class set for a navbar with a logo on left end, a ul on right, and the ul's elements are centred in their resppective cells ig.
